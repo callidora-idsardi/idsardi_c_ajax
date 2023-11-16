@@ -1,0 +1,38 @@
+
+@use '../abstracts' as a;
+
+body {
+    margin-top: 20px;
+}
+
+// Spinner
+#spinnerCon {
+    margin: auto;
+    margin-bottom: 40px;
+
+    svg {
+        
+        @include a.rotate;
+        width: 100px;
+      
+    }
+}
+
+//Errors
+
+.error{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+
+        span {
+            color:#E89B36;
+            font-size: 70px;
+        }
+    }
+}
+
