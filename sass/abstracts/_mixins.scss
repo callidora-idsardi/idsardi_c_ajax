@@ -1,4 +1,17 @@
 //Mixins
+@mixin rotate {
+      animation: rotate 2s infinite ease-in-out;
+     
+      @keyframes rotate{
+      0% {
+            transform: rotate(0deg); 
+      }
+      100% {
+            transform: rotate(360deg);
+      }
+      }
+}
+
 
 @mixin rotated($radius) {
       -webkit-transform: rotate($radius);

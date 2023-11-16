@@ -151,11 +151,37 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
+body {
+  margin-top: 20px;
+}
+
 #spinnerCon {
-  z-index: 1;
-  position: absolute;
-  top: -10em;
+  margin: auto;
+  margin-bottom: 40px;
 }
 #spinnerCon svg {
-  width: 1000px;
+  animation: rotate 2s infinite ease-in-out;
+  width: 100px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.error p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.error p span {
+  color: #E89B36;
+  font-size: 70px;
 }/*# sourceMappingURL=main.css.map */

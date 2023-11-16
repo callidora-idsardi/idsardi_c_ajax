@@ -13,10 +13,19 @@
   </head>
   <body>
     <div class="grid-con">
-      <div id="spinnerCon">
-        
+
+      <div id="error-message" class="col-span-full">
+      <!-- error message -->
       </div>
-      <div class="col-span-full">
+
+
+      <div id="spinnerCon" class="col-span-full">
+       <!-- spinner svg -->
+      </div>
+
+    
+      
+      <div id="model-con" class="col-span-full">
   
         <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
         
@@ -27,13 +36,11 @@
              
                 <!-- hotspot template start -->
                 <template id="hotspot-template">
-              
-                  <li>
                     <h3 class="hotspot-heading"></h3>
                     <p class="hotspot-description"></p>
                     <img src="" class="hotspot-image">
-                  </li>
                 </template>
+
               </div>
           </button>
           
