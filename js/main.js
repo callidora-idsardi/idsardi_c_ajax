@@ -47,7 +47,7 @@
   //error
 
   function showError() {
-    errorMessage.innerHTML =  error;
+    errorMessage.innerHTML = error;
   }
 
 
