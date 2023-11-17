@@ -1,5 +1,15 @@
+@use '../abstracts' as a;
+  
+
+
+
+
+  
   // Customize our own hotspot 
-  model-viewer {
+   model-viewer {
+    border: 3px solid;
+    border-radius: 5%;
+    border-color: a.$orange;
     width: auto;
     max-width: 1200px;
     height: 700px;
@@ -15,6 +25,8 @@
     height: 38px;
     display: none;
     transition: all 1s ease-in-out;
+
+  
   }
 
   .Hotspot:not([data-visible]) {
@@ -25,9 +37,8 @@
   .HotspotAnnotation{
     visibility: hidden;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.8);
     display: block;
     font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 18px;
@@ -39,26 +50,24 @@
     position: absolute;
     top: 50%;
     width: max-content;
-    text-align: left;
   }
 
   .HotspotAnnotation p {
-    color: #333;
+    margin-top: 15px;
     line-height: 22px;
     font-weight: 300;
   }
 
   .HotspotAnnotation h2 {
+    color: a.$orange;
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 
-  .HotspotAnnotation img {
-    max-width: 250px;
-  }
+
 
   model-viewer::part(default-progress-bar) {
-    height: 30px;
+    height: 20px;
     background-color: #E89B36;
   }
   
