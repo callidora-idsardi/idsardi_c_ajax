@@ -80,8 +80,8 @@ model-viewer {
 }
 
 model-viewer::part(default-progress-bar) {
-  height: 20px;
-  background-color: #E89B36;
+  height: 10px;
+  background-color: #83551a;
 }
 
 /* AR Rules */
@@ -194,17 +194,34 @@ body {
   font-size: 40px;
 }
 #material-con h3 {
+  text-align: center;
   font-size: 16px;
-  color: #945c13;
+  color: #83551a;
 }
 #material-con p {
   margin-top: 10px;
-  color: rgb(27, 27, 27);
+  color: #83551a;
 }
-#material-con ol {
-  align-items: start;
-  gap: 50px;
+#material-con ul {
+  list-style: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
-  color: #945c13;
+}
+#material-con li {
+  margin-bottom: 35px;
+  border: 3px solid;
+  border-radius: 20px;
+  border-color: #E89B36;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  #material-con ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+  #material-con li {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
